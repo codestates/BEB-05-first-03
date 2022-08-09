@@ -2,12 +2,12 @@
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import axios from "axios";
-import React, { useState, useEffect } from 'react';
+//import React, { useState, useEffect } from 'react';
 
 function App() {
   function login() {
-    let result = axios.get("http://localhost:3000/login");
-    console.log(result);
+    let result = axios.get("http://localhost:4000/users/login");
+    console.log(result.data);
   } 
   return (
     <div className="App">
