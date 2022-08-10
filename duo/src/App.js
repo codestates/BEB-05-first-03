@@ -6,8 +6,8 @@ import axios from "axios";
 
 function App() {
   function login() {
-    let result = axios.get("http://localhost:4000/users/login");
-    console.log(result.data);
+    let result = axios.get("http://localhost:4000/users/login").then((response)=>{console.log(response)})
+    // console.log(result);
   } 
   return (
     <div className="App">
